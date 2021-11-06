@@ -37,8 +37,10 @@ class TestCalc(unittest.TestCase):
         '''用例描述4'''
         print('第四个用例')
     def testmulti23(self):
+        '''这个是第五个测试用例'''
         self.assertEqual(multi(2, 3), 6)
     def testmulti34(self):
+        '''这个是第六个测试用例'''
         self.assertEqual(multi(3, 4), 10)
 
 
