@@ -1,3 +1,4 @@
+print("hello world!")
 str1 = "hello world!"
 str2 = "zhouyi"
 f = open('helloworld.html','w')
