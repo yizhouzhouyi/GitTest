@@ -28,6 +28,7 @@ class TestCalc(unittest.TestCase):
 
     def testdd(self):
         '''用例描述3'''
+        self.assertEqual(1, 9)
         print('第三个用例')
 
     def testbb(self):
