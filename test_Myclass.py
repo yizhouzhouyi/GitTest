@@ -1,5 +1,7 @@
 import unittest   #单元测试模块
 from BeautifulReport import BeautifulReport as bf  #导入BeautifulReport模块，这个模块也是生成报告的模块，但是比HTMLTestRunner模板好看
+from multify import multi
+
 
 class TestCalc(unittest.TestCase):
     def setUp(self):  #每个用例运行之前运行的
@@ -18,7 +20,7 @@ class TestCalc(unittest.TestCase):
 
     def testcc(self):    #函数名要以test开头，否则不会被执行
         '''这是第一个测试用例'''       #用例描述，在函数下，用三个单引号里面写用例描述
-        self.assertEqual(1,1)
+        self.assertEqual(1, 1)
         print('第一个用例')
 
     def testaa(self):
@@ -34,6 +36,11 @@ class TestCalc(unittest.TestCase):
     def testbb(self):
         '''用例描述4'''
         print('第四个用例')
+    def testmulti23(self):
+        self.assertEqual(multi(2, 3), 6)
+    def testmulti34(self):
+        self.assertEqual(multi(3, 4), 10)
+
 
 suite = unittest.TestSuite()  #定义一个测试集合
 suite.addTest(unittest.makeSuite(TestCalc))  #把写的用例加进来（将TestCalc类）加进来
