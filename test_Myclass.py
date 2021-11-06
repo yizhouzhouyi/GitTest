@@ -1,6 +1,6 @@
 import unittest   #单元测试模块
 from BeautifulReport import BeautifulReport as bf  #导入BeautifulReport模块，这个模块也是生成报告的模块，但是比HTMLTestRunner模板好看
-from multify import multi
+from multify import multi, add
 
 
 class TestCalc(unittest.TestCase):
@@ -42,6 +42,9 @@ class TestCalc(unittest.TestCase):
     def testmulti34(self):
         '''这个是第六个测试用例'''
         self.assertEqual(multi(3, 4), 10)
+    def testadd23(self):
+        '''这个是第七个测试用例'''
+        self.assertEqual(add(2,3),4)
 
 
 suite = unittest.TestSuite()  #定义一个测试集合
