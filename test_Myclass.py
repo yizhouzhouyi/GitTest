@@ -34,7 +34,11 @@ class TestCalc(unittest.TestCase):
 
     def testadd23(self):
         '''这是第七个测试用例'''
-        self.assertEqual(add(2,3),4)
+        self.assertEqual(add(2,3), 4)
+
+    def testadd78(self):
+        '''这是第八个测试用例'''
+        self.assertEqual(add(7,8), 15)
 
 
 suite = unittest.TestSuite()  #定义一个测试集合
