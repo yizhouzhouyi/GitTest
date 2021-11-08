@@ -40,6 +40,10 @@ class TestCalc(unittest.TestCase):
         '''这是第八个测试用例'''
         self.assertEqual(add(7,8), 15)
 
+    def testadd19(self):
+        '''这是第九个测试用例'''
+        self.assertEqual(add(1, 9), 10)
+
 
 suite = unittest.TestSuite()  #定义一个测试集合
 suite.addTest(unittest.makeSuite(TestCalc))  #把写的用例加进来（将TestCalc类）加进来
